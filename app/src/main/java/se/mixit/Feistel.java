@@ -20,6 +20,10 @@ public class Feistel {
                 Ro=Rn;
                 Lo=Ln;
             }
+            if (Rn < 32)
+                Rn += 200;
+            if (Ln < 32)
+                Ln += 200;
             CipherTextArray[j]=Rn;
             CipherTextArray[j+1]=Ln;
         }

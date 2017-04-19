@@ -11,8 +11,80 @@
         android:paddingBottom="@dimen/activity_vertical_margin"
         tools:context="se.mixit.MainActivity">
 
-    <TextView
+    <Button
+            android:text="Go"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" android:layout_marginBottom="28dp" android:id="@+id/Go"/>
+    <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Hello World!"/>
+            android:id="@+id/radio_Decrypt" android:layout_alignParentTop="true" android:layout_alignRight="@+id/Go"
+            android:layout_alignEnd="@+id/Go" android:layout_marginRight="11dp" android:layout_marginEnd="11dp"/>
+    <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radio_Encrypt"
+            android:layout_alignBottom="@+id/radio_Decrypt" android:layout_alignLeft="@+id/textView"
+            android:layout_alignStart="@+id/textView" android:checked="true"/>
+    <TextView
+            android:text="Encrypt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:layout_alignBaseline="@+id/radio_Encrypt" android:layout_alignBottom="@+id/radio_Encrypt"
+            android:layout_toLeftOf="@+id/radio_Decrypt" android:layout_toStartOf="@+id/radio_Decrypt"
+            android:layout_marginRight="26dp" android:layout_marginEnd="26dp"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/text_Output"
+            android:layout_above="@+id/Go" android:layout_alignLeft="@+id/textView5"
+            android:layout_alignStart="@+id/textView5" android:layout_marginBottom="50dp"/>
+    <TextView
+            android:text="Decrypt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3" android:layout_alignBaseline="@+id/radio_Decrypt"
+            android:layout_alignBottom="@+id/radio_Decrypt" android:layout_toRightOf="@+id/radio_Decrypt"
+            android:layout_toEndOf="@+id/radio_Decrypt"/>
+    <TextView
+            android:text="Message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:layout_marginTop="52dp" android:layout_below="@+id/radio_Encrypt"
+            android:layout_alignLeft="@+id/text_Input" android:layout_alignStart="@+id/text_Input"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/text_Input"
+            android:layout_marginTop="12dp" android:layout_below="@+id/textView"
+            android:layout_alignLeft="@+id/textView4" android:layout_alignStart="@+id/textView4"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/text_Key"
+            android:layout_marginBottom="36dp" android:layout_above="@+id/textView5"
+            android:layout_centerHorizontal="true"/>
+    <TextView
+            android:text="Output"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView5"
+            android:layout_above="@+id/text_Output" android:layout_alignLeft="@+id/text_Key"
+            android:layout_alignStart="@+id/text_Key"/>
+    <TextView
+            android:text="Key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView4"
+            android:layout_above="@+id/text_Key" android:layout_alignLeft="@+id/text_Key"
+            android:layout_alignStart="@+id/text_Key"/>
 </RelativeLayout>
