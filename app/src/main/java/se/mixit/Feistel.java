@@ -2,6 +2,7 @@ package se.mixit;
 
 /*
         Class with the main methods for Encryption/Decryption
+        Hi David
  */
 public class Feistel {
     public String encrypt(String PlainText,String Key){
