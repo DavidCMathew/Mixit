@@ -15,9 +15,9 @@
             android:text="Go"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-        android:layout_marginBottom="19dp" android:id="@+id/Go"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+            android:layout_marginBottom="19dp" android:id="@+id/Go"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" android:elevation="0dp"/>
     <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -29,26 +29,26 @@
         android:weightSum="1">
 
         <RadioButton
-            android:id="@+id/radio_Encrypt"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignEnd="@+id/Go"
-            android:layout_alignParentTop="true"
-            android:layout_alignRight="@+id/Go"
-            android:layout_marginEnd="11dp"
-            android:layout_marginRight="11dp" />
+                android:id="@+id/radio_Encrypt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/Go"
+                android:layout_alignParentTop="true"
+                android:layout_alignRight="@+id/Go"
+                android:layout_marginEnd="11dp"
+                android:layout_marginRight="11dp" android:checked="true"/>
 
         <TextView
-            android:id="@+id/textView2"
-            android:layout_width="64dp"
-            android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/radio_Encrypt"
-            android:layout_alignBottom="@+id/radio_Encrypt"
-            android:layout_marginEnd="26dp"
-            android:layout_marginRight="26dp"
-            android:layout_toLeftOf="@+id/radio_Decrypt"
-            android:layout_toStartOf="@+id/radio_Decrypt"
-            android:text="Encrypt" />
+                android:id="@+id/textView2"
+                android:layout_width="64dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/radio_Encrypt"
+                android:layout_alignBottom="@+id/radio_Encrypt"
+                android:layout_marginEnd="26dp"
+                android:layout_marginRight="26dp"
+                android:layout_toLeftOf="@+id/radio_Decrypt"
+                android:layout_toStartOf="@+id/radio_Decrypt"
+                android:text="Encrypt" tools:ignore="HardcodedText"/>
 
         <RadioButton
             android:id="@+id/radio_Decrypt"
@@ -121,11 +121,10 @@
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:inputType="textPersonName"
             android:ems="10"
             android:id="@+id/text_Output"
         android:layout_marginTop="16dp"
         android:layout_below="@+id/textView5"
-        android:layout_centerHorizontal="true" />
+            android:layout_alignLeft="@+id/text_Key" android:layout_alignStart="@+id/text_Key"/>
 
 </RelativeLayout>

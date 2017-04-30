@@ -1,16 +1,10 @@
 package se.mixit;
 
-import org.junit.Rule;
 import org.junit.Test;
-
 import org.junit.runner.RunWith;
-import org.junit.runner.Runner;
 import org.junit.runners.Parameterized;
-
-
 import java.util.Arrays;
 import java.util.List;
-
 import static org.junit.Assert.*;
 
 /**
